@@ -68,8 +68,9 @@ export default function NestedList() {
           <ListItemIcon>
           {/* <StarBorder /> */}
           </ListItemIcon>
-          <ListItemText primary="JasKu Do" />
-
+          <Link href='/jaskudo' style={{textDecoration:'none', color:'black'}}>
+              <ListItemText primary="JasKu Do" />
+          </Link>
         </ListItemButton>
  
           <ListItemButton sx={{ pl: 4 }} onClick={handleClickJaskudo}>
@@ -87,7 +88,7 @@ export default function NestedList() {
                 <StarBorder style={{opacity:'0'}}/>
                 <StarBorder style={{opacity:'0'}}/>
               </ListItemIcon>
-              <Link href='/land' style={{textDecoration:'none', color:'black'}}>
+              <Link href='/jakadalu' style={{textDecoration:'none', color:'black'}}>
                 <ListItemText primary="JaKa DaLu"/>
               </Link>
             </ListItemButton>
@@ -107,7 +108,9 @@ export default function NestedList() {
                 <StarBorder style={{opacity:'0'}}/>
                 <StarBorder style={{opacity:'0'}}/>
               </ListItemIcon>
-              <ListItemText primary="Sea" />
+              <Link href='/sea' style={{textDecoration:'none', color:'black'}}>
+                <ListItemText primary="Sea" />
+              </Link>
             </ListItemButton>
             <ListItemButton sx={{ pl: 4 }}>
               <ListItemIcon>
@@ -115,7 +118,9 @@ export default function NestedList() {
                 <StarBorder style={{opacity:'0'}}/>
                 <StarBorder style={{opacity:'0'}}/>
               </ListItemIcon>
-              <ListItemText primary="Air" />
+              <Link href='/air' style={{textDecoration:'none', color:'black'}}>
+                <ListItemText primary="Air" />
+              </Link>
             </ListItemButton>
           </List>
         </Collapse>
@@ -129,13 +134,17 @@ export default function NestedList() {
             <ListItemIcon>
               {/* <StarBorder /> */}
             </ListItemIcon>
-            <ListItemText primary="Warehouse" />
+            <Link href='/warehouse' style={{textDecoration:'none', color:'black'}}>
+              <ListItemText primary="Warehouse" />
+            </Link>
           </ListItemButton>
           <ListItemButton sx={{ pl: 4 }}>
             <ListItemIcon>
               {/* <StarBorder /> */}
             </ListItemIcon>
-            <ListItemText primary="Our Armada" />
+            <Link href='/armada' style={{textDecoration:'none', color:'black'}}>
+              <ListItemText primary="Our Armada" />
+            </Link>
           </ListItemButton>
         </List>
       </Collapse>
@@ -143,19 +152,25 @@ export default function NestedList() {
         <ListItemIcon>
           {/* <StarBorder /> */}
         </ListItemIcon>
-        <ListItemText primary="Network" />
+        <Link href='/network' style={{textDecoration:'none', color:'black'}}>
+          <ListItemText primary="Network" />
+        </Link> 
       </ListItemButton>
       <ListItemButton>
         <ListItemIcon>
           {/* <StarBorder /> */}
         </ListItemIcon>
-        <ListItemText primary="Gallery" />
+        <Link href='/gallery' style={{textDecoration:'none', color:'black'}}>
+          <ListItemText primary="Gallery" />
+        </Link> 
       </ListItemButton>
       <ListItemButton onClick={handleClickAbout}>
         <ListItemIcon>
           {/* <StarBorder /> */}
         </ListItemIcon>
-        <ListItemText primary="About Us" />
+        <Link href='/aboutus' style={{textDecoration:'none', color:'black'}}>
+          <ListItemText primary="About Us" />
+        </Link> 
         {openAbout ?  <ExpandMore /> : <ExpandLess />}
       </ListItemButton>
       <Collapse in={!openAbout} timeout="auto" unmountOnExit>
