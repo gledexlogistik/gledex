@@ -432,7 +432,7 @@ export default function Gallery() {
     .then(response => setProjects2021(response.body));
   }
   const getGatherings2015 = async e =>{
-    const response = await fetch('https://gledexnew.herokuapp.com/check/projects2021_gal', {
+    const response = await fetch('https://gledexnew.herokuapp.com/check/gatherings2015_gal', {
       method: 'POST',
       // headers: {
       //   'Content-Type': 'application/json',
@@ -442,7 +442,7 @@ export default function Gallery() {
     .then(response => setGatherings2015(response.body));
   }
   const getGatherings2016 = async e =>{
-    const response = await fetch('https://gledexnew.herokuapp.com/check/projects2021_gal', {
+    const response = await fetch('https://gledexnew.herokuapp.com/check/gatherings2016_gal', {
       method: 'POST',
       // headers: {
       //   'Content-Type': 'application/json',
@@ -452,7 +452,7 @@ export default function Gallery() {
     .then(response => setGatherings2016(response.body));
   }
   const getGatherings2017 = async e =>{
-    const response = await fetch('https://gledexnew.herokuapp.com/check/projects2021_gal', {
+    const response = await fetch('https://gledexnew.herokuapp.com/check/gatherings2017_gal', {
       method: 'POST',
       // headers: {
       //   'Content-Type': 'application/json',
@@ -462,7 +462,7 @@ export default function Gallery() {
     .then(response => setGatherings2017(response.body));
   }
   const getGatherings2020 = async e =>{
-    const response = await fetch('https://gledexnew.herokuapp.com/check/projects2021_gal', {
+    const response = await fetch('https://gledexnew.herokuapp.com/check/gatherings2020_gal', {
       method: 'POST',
       // headers: {
       //   'Content-Type': 'application/json',
@@ -472,7 +472,7 @@ export default function Gallery() {
     .then(response => setGatherings2020(response.body));
   }
   const getGatherings2021 = async e =>{
-    const response = await fetch('https://gledexnew.herokuapp.com/check/projects2021_gal', {
+    const response = await fetch('https://gledexnew.herokuapp.com/check/gatherings2021_gal', {
       method: 'POST',
       // headers: {
       //   'Content-Type': 'application/json',
@@ -485,6 +485,9 @@ export default function Gallery() {
   React.useEffect(() => {
     getGatherings2021();
     getGatherings2020();
+    getGatherings2017();
+    getGatherings2016();
+    getGatherings2015();
     getProjects2021();
     getProjects2020();
     getAwards2020();
