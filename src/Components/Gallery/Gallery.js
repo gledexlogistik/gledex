@@ -604,6 +604,9 @@ export default function Gallery() {
                       onChange={handleChangeSelector}
                     >
                       <MenuItem value="">All</MenuItem>
+                      <MenuItem value={2015}>2015</MenuItem>
+                      <MenuItem value={2016}>2016</MenuItem>
+                      <MenuItem value={2017}>2017</MenuItem>
                       <MenuItem value={2020}>2020</MenuItem>
                       <MenuItem value={2021}>2021</MenuItem>
                     </Select>
