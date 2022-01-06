@@ -339,16 +339,20 @@ export default function Gallery() {
   const [gath_year, setGathYear] = React.useState('');
   const [proj_year, setProjYear] = React.useState('');
   const [award_year, setAwardYear] = React.useState('');
+  const [csr2018, setCsr2018] = React.useState([]);
   const [csr2020, setCsr2020] = React.useState([]);
   const [csr2021, setCsr2021] = React.useState([]);
   const [awards2020, setAwards2020] = React.useState([]);
   const [awards2021, setAwards2021] = React.useState([]);
   const [projects2020, setProjects2020] = React.useState([]);
   const [projects2021, setProjects2021] = React.useState([]);
+  const [gatherings2015, setGatherings2015] = React.useState([]);
+  const [gatherings2016, setGatherings2016] = React.useState([]);
+  const [gatherings2017, setGatherings2017] = React.useState([]);
   const [gatherings2020, setGatherings2020] = React.useState([]);
   const [gatherings2021, setGatherings2021] = React.useState([]);
-  const csrAll = csr2020.concat(csr2021)
-  const gathAll = gatherings2020.concat(gatherings2021)
+  const csrAll = csr2020.concat(csr2021.concat(csr2018))
+  const gathAll = gatherings2020.concat(gatherings2021.concat(gatherings2015.concat(gatherings2016.concat(gatherings2017))))
   const awardsAll = awards2020.concat(awards2021)
   const projectsAll = projects2020.concat(projects2021)
   console.log(csrAll);
@@ -366,6 +370,16 @@ export default function Gallery() {
     })
     .then(response => response.json())
     .then(response => setCsr2020(response.body));
+  }
+  const getCsr2018 = async e =>{
+    const response = await fetch('https://gledexnew.herokuapp.com/check/csr2018_gal', {
+      method: 'POST',
+      // headers: {
+      //   'Content-Type': 'application/json',
+      // }
+    })
+    .then(response => response.json())
+    .then(response => setCsr2018(response.body));
   }
   const getCsr2021 = async e =>{
     const response = await fetch('https://gledexnew.herokuapp.com/check/csr2021_gal', {
@@ -417,6 +431,36 @@ export default function Gallery() {
     .then(response => response.json())
     .then(response => setProjects2021(response.body));
   }
+  const getGatherings2015 = async e =>{
+    const response = await fetch('https://gledexnew.herokuapp.com/check/projects2021_gal', {
+      method: 'POST',
+      // headers: {
+      //   'Content-Type': 'application/json',
+      // }
+    })
+    .then(response => response.json())
+    .then(response => setGatherings2015(response.body));
+  }
+  const getGatherings2016 = async e =>{
+    const response = await fetch('https://gledexnew.herokuapp.com/check/projects2021_gal', {
+      method: 'POST',
+      // headers: {
+      //   'Content-Type': 'application/json',
+      // }
+    })
+    .then(response => response.json())
+    .then(response => setGatherings2016(response.body));
+  }
+  const getGatherings2017 = async e =>{
+    const response = await fetch('https://gledexnew.herokuapp.com/check/projects2021_gal', {
+      method: 'POST',
+      // headers: {
+      //   'Content-Type': 'application/json',
+      // }
+    })
+    .then(response => response.json())
+    .then(response => setGatherings2017(response.body));
+  }
   const getGatherings2020 = async e =>{
     const response = await fetch('https://gledexnew.herokuapp.com/check/projects2021_gal', {
       method: 'POST',
@@ -446,6 +490,7 @@ export default function Gallery() {
     getAwards2020();
     getAwards2021();
     getImages();
+    getCsr2018();
     getCsr2021();
   }, []);
 
@@ -485,10 +530,25 @@ export default function Gallery() {
                 onChange={handleChangeSelector}
               >
                 <MenuItem value="">All</MenuItem>
+                <MenuItem value={2018}>2018</MenuItem>
                 <MenuItem value={2020}>2020</MenuItem>
                 <MenuItem value={2021}>2021</MenuItem>
               </Select>
             </FormControl>
+            {csr_year === 2018 ? (
+            <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight="auto" className={classes.imageListStyle}>
+                {csr2020.map((item) => (
+                  <ImageListItem key={item.img} className={classes.imageListItem}>
+                    <img
+                      className={classes.imgItem}
+                      srcSet={`${item.img}`}
+                      alt="GL Image"
+                      loading="lazy"
+                    />
+                  </ImageListItem>
+                ))}
+            </ImageList>
+            ):null}
             {csr_year === 2020 ? (
             <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight="auto" className={classes.imageListStyle}>
                 {csr2020.map((item) => (
