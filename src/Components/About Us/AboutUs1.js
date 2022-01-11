@@ -41,6 +41,13 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft:'13vw'
     },
     textGreyGridTop: {
+        [theme.breakpoints.between('xs','sm')]: {
+            fontFamily:'arial',
+            fontSize:'14px',
+            paddingLeft:'13vw',
+            paddingRight:'13vw',
+            textAlign:'justify'      
+        },
         fontFamily:'arial',
         fontSize:'18px',
         paddingLeft:'13vw',
@@ -48,6 +55,14 @@ const useStyles = makeStyles((theme) => ({
         textAlign:'justify'
     },
     textGreyGrid: {
+        [theme.breakpoints.between('xs','sm')]: {
+            fontFamily:'arial',
+            fontSize:'14px',
+            paddingLeft:'13vw',
+            paddingRight:'13vw',
+            paddingBottom:'2em',
+            textAlign:'justify'       
+        },
         fontFamily:'arial',
         fontSize:'18px',
         paddingLeft:'13vw',

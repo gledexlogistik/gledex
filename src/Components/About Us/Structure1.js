@@ -45,6 +45,12 @@ const useStyles = makeStyles((theme) => ({
         color: '#006936',
     },
     textWhiteGrid:{
+        [theme.breakpoints.between('xs','sm')]: {
+            fontFamily:'arial',
+            fontSize:'14px',
+            paddingLeft:'13vw',
+            paddingRight:'5em',         
+        },
         fontFamily:'arial',
         fontSize:'18px',
         paddingLeft:'13vw',
@@ -127,7 +133,7 @@ export default function Structure1(){
                 <Grid item xs={12}>
                     <h2 className={classes.heading}>Structure</h2>
                     <p className={classes.textSubHeading}>
-                        If you have some question or inquiries, feel free to contact us
+                        Our Organitazional Structure and Legal Documents
                     </p>
                 </Grid>
                 {/* <Grid item xs={12}>
