@@ -344,6 +344,7 @@ export default function Gallery() {
   const [csr2021, setCsr2021] = React.useState([]);
   const [awards2020, setAwards2020] = React.useState([]);
   const [awards2021, setAwards2021] = React.useState([]);
+  const [projects2017, setProjects2017] = React.useState([]);
   const [projects2020, setProjects2020] = React.useState([]);
   const [projects2021, setProjects2021] = React.useState([]);
   const [gatherings2015, setGatherings2015] = React.useState([]);
@@ -410,6 +411,16 @@ export default function Gallery() {
     })
     .then(response => response.json())
     .then(response => setAwards2021(response.body));
+  }
+  const getProjects2017 = async e =>{
+    const response = await fetch('https://gledexnew.herokuapp.com/check/projects2017_gal', {
+      method: 'POST',
+      // headers: {
+      //   'Content-Type': 'application/json',
+      // }
+    })
+    .then(response => response.json())
+    .then(response => setProjects2017(response.body));
   }
   const getProjects2020 = async e =>{
     const response = await fetch('https://gledexnew.herokuapp.com/check/projects2020_gal', {
@@ -490,6 +501,7 @@ export default function Gallery() {
     getGatherings2015();
     getProjects2021();
     getProjects2020();
+    getProjects2017();
     getAwards2020();
     getAwards2021();
     getImages();
@@ -715,6 +727,20 @@ export default function Gallery() {
                   <MenuItem value={2021}>2021</MenuItem>
                 </Select>
             </FormControl>
+            {proj_year === 2017 ? (
+            <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight="auto" className={classes.imageListStyle}>
+                {projects2017.map((item) => (
+                  <ImageListItem key={item.img} className={classes.imageListItem}>
+                    <img
+                      className={classes.imgItem}
+                      srcSet={`${item.img}`}
+                      alt="GL Image"
+                      loading="lazy"
+                    />
+                  </ImageListItem>
+                ))}
+            </ImageList>
+            ):null}
             {proj_year === 2020 ? (
             <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight="auto" className={classes.imageListStyle}>
                 {projects2020.map((item) => (

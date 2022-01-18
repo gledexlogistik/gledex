@@ -456,8 +456,19 @@ const useStyles = makeStyles((theme) => ({
       marginRight:'9%',
       width:'100%',
       paddingTop:'9vh',
-      paddingBottom:'16vh',
-      // alignItems:'center'
+      // paddingBottom:'16vh',
+      [theme.breakpoints.up('lg')]: {
+        display:'flex',
+        flexDirection:'row-reverse',
+        flexWrap:'wrap',
+        justifyContent:'space-between',
+        marginLeft:'9%',
+        marginRight:'9%',
+        width:'100%',
+        paddingTop:'9vh',
+        paddingBottom:'16vh',
+        // alignItems:'center'
+      }
     },
     headingRightDescr:{
       [theme.breakpoints.between('xs', 'sm')]: {

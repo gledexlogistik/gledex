@@ -108,9 +108,9 @@ const useStyles = makeStyles((theme) => ({
         top:'3rem',
         left:'45%',
         height:'auto',
-        width:'70vw',
+        // width:'70vw',
         maxHeight:'100%',
-        maxWidth:'100%',
+        maxWidth:'91%',
         left:'45%',
         transform:'translate(-50%,0)',
         '&:hover, &:focus': {
@@ -186,9 +186,9 @@ const useStyles = makeStyles((theme) => ({
         top:'3rem',
         left:'45%',
         height:'auto',
-        width:'70vw',
+        // width:'70vw',
         maxHeight:'100%',
-        maxWidth:'100%',
+        maxWidth:'91%',
         left:'45%',
         transform:'translate(-50%,0)',
         '&:hover, &:focus': {
@@ -264,7 +264,7 @@ const useStyles = makeStyles((theme) => ({
     imgTop:{
       [theme.breakpoints.between('xs','md')]: {
           position:'absolute',
-          width:'70vw',
+          width:'auto',
           height:'auto',
           // left:'10%',
           left:'55%',
@@ -342,7 +342,7 @@ const useStyles = makeStyles((theme) => ({
     imgTopDown:{
       [theme.breakpoints.between('xs','md')]: {
           position:'absolute',
-          width:'70vw',
+          width:'auto',
           height:'auto',
           // left:'10%',
           left:'55%',
@@ -492,7 +492,7 @@ const useStyles = makeStyles((theme) => ({
       marginLeft:'9%',
       marginRight:'9%',
       width:'100%',
-      paddingTop:'4vh',
+      paddingTop:'9vh',
       // paddingBottom:'16vh',
       // alignItems:'center'
     },

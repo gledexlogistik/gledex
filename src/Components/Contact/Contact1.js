@@ -145,7 +145,7 @@ export default function Contact1(){
         </Grid>
         <Grid container className={classes.rowGrid}>
             <Grid item xl={6} lg={6} md={6} sm={12} xs={12} className={classes.imgGrid}>
-                <a href="https://goo.gl/maps/6sGvia3RZ9Y1KqSs8" target="_blank"><img src='./Assets/contact-maps.png' className={classes.imgLoc}/></a>
+                <a href="https://goo.gl/maps/6sGvia3RZ9Y1KqSs8" target="_blank"><img src='./Assets/Gledex Jakarta Maps.png' className={classes.imgLoc}/></a>
                 <p className={classes.headLoc}>Jakarta Office</p>
                 <p className={classes.txtLoc}>
                 Jl. Cempaka Putih Tengah II No. 2D,<br/>
@@ -156,7 +156,7 @@ export default function Contact1(){
                 </p>
             </Grid>
             <Grid item xl={6} lg={6} md={6} sm={12} xs={12} className={classes.imgGrid}>
-                <a href="https://goo.gl/maps/1D2zF8b8gDHHuinb8" target="_blank"><img src='./Assets/contact-maps.png' className={classes.imgLoc}/></a>
+                <a href="https://goo.gl/maps/1D2zF8b8gDHHuinb8" target="_blank"><img src='./Assets/Gledex Bandung Maps.png' className={classes.imgLoc}/></a>
                 <p className={classes.headLoc}>Bandung Office</p>
                 <p className={classes.txtLoc}>
                 Komplek Kopo Mas Regency, Blok 88 X<br/>
@@ -169,7 +169,7 @@ export default function Contact1(){
         </Grid>
         <Grid container className={classes.rowGrid}>
             <Grid item xl={6} lg={6} md={6} sm={12} xs={12} className={classes.imgGrid}>
-                <a href="https://goo.gl/maps/b3LWX9inJVLxAr8e6" target="_blank"><img src='./Assets/contact-maps.png' className={classes.imgLoc}/></a>
+                <a href="https://goo.gl/maps/b3LWX9inJVLxAr8e6" target="_blank"><img src='./Assets/Gledex Cirebon Maps.png' className={classes.imgLoc}/></a>
                 <p className={classes.headLoc}>Cirebon Office</p>
                 <p className={classes.txtLoc}>
                 Jl. Jendral Sudirman No. 148<br/>
@@ -179,7 +179,7 @@ export default function Contact1(){
                 </p>
             </Grid>
             <Grid item xl={6} lg={6} md={6} sm={12} xs={12} className={classes.imgGrid}>
-                <a href="https://goo.gl/maps/xpei6J47Jh6N7cPS8" target="_blank"><img src='./Assets/contact-maps.png' className={classes.imgLoc}/></a>
+                <a href="https://goo.gl/maps/xpei6J47Jh6N7cPS8" target="_blank"><img src='./Assets/Gledex Surabaya Maps.png' className={classes.imgLoc}/></a>
                 <p className={classes.headLoc}>Surabaya Office</p>
                 <p className={classes.txtLoc}>
                 Jl. Raya Sedati Gede Komplek Pasar Wisata Juanda Blok C No. 16<br/>

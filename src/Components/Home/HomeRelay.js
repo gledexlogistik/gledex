@@ -1605,7 +1605,7 @@ export default function HomeRelay(){
                 </Grid>
             </Grid>
         </Grid>
-        <Grid container spacing={0}>
+        {/* <Grid container spacing={0}>
             <Grid item xs={12} style={{backgroundColor: '#006936'}}>
               <Carousel>
                   {
@@ -1613,7 +1613,7 @@ export default function HomeRelay(){
                   }
               </Carousel>
             </Grid>
-        </Grid>
+        </Grid> */}
     </div>
     );
 
