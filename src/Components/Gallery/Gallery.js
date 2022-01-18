@@ -355,7 +355,7 @@ export default function Gallery() {
   const csrAll = csr2020.concat(csr2021.concat(csr2018))
   const gathAll = gatherings2020.concat(gatherings2021.concat(gatherings2015.concat(gatherings2016.concat(gatherings2017))))
   const awardsAll = awards2020.concat(awards2021)
-  const projectsAll = projects2020.concat(projects2021)
+  const projectsAll = projects2020.concat(projects2021.concat(projects2017))
   console.log(csrAll);
 
   const handleChange = (event, newValue) => {
@@ -723,7 +723,7 @@ export default function Gallery() {
                   onChange={handleChangeSelector}
                 >
                   <MenuItem value="">All</MenuItem>
-                  <MenuItem value={2020}>2017</MenuItem>
+                  <MenuItem value={2017}>2017</MenuItem>
                   <MenuItem value={2020}>2020</MenuItem>
                   <MenuItem value={2021}>2021</MenuItem>
                 </Select>
