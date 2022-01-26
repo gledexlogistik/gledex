@@ -165,6 +165,12 @@ const useStyles = makeStyles((theme) => ({
     link:{
       textDecoration:'none',
       color:'white',
+    },
+    ptag:{
+      display: 'block !improtant',
+      margin: '0px !important',
+      border: '0px !important',
+      padding: '0px !important'
     }
 }));
 
@@ -256,7 +262,7 @@ export default function Footer() {
                     </Grid>
                     <br/>
                     <Grid item>
-                      <a>Instagram</a>
+                      <p className={classes.ptag}><a className={classes.link} href="https://instagram.com/gledexlogistik?utm_medium=copy_link" target="_blank" rel="noopener noreferrer">Instagram</a></p>
                     </Grid>
                     <br/>
                     <Grid item>
@@ -264,7 +270,7 @@ export default function Footer() {
                     </Grid>
                     <br/>
                     <Grid item>
-                      <a>Facebook</a>
+                      <p className={classes.ptag}><a className={classes.link} href="https://www.facebook.com/gledex.logistics" target="_blank" rel="noopener noreferrer">Facebook</a></p>
                     </Grid>
                   </Grid>
                 </Grid>
