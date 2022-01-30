@@ -258,7 +258,7 @@ export default function Footer() {
                   <h2 className={classes.footerMenuHeader}>Contact Us</h2>
                   <Grid container style={{display:'block', color:'white',fontFamily:'arial', fontSize:'12px', fontWeight:'500'}}>
                     <Grid item>
-                      <p className={classes.ptag}><a className={classes.link} href="https://wa.me/message/KMHQ55COCYWMB1">WhatsApp</a></p>
+                      <p className={classes.ptag}><a className={classes.link} href="https://wa.me/message/KMHQ55COCYWMB1" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
                     </Grid>
                     <br/>
                     <Grid item>
