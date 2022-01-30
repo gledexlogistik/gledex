@@ -258,15 +258,11 @@ export default function Footer() {
                   <h2 className={classes.footerMenuHeader}>Contact Us</h2>
                   <Grid container style={{display:'block', color:'white',fontFamily:'arial', fontSize:'12px', fontWeight:'500'}}>
                     <Grid item>
-                      <a>WhatsApp</a>
+                      <p className={classes.ptag}><a className={classes.link} href="https://wa.me/message/KMHQ55COCYWMB1">WhatsApp</a></p>
                     </Grid>
                     <br/>
                     <Grid item>
                       <p className={classes.ptag}><a className={classes.link} href="https://instagram.com/gledexlogistik?utm_medium=copy_link" target="_blank" rel="noopener noreferrer">Instagram</a></p>
-                    </Grid>
-                    <br/>
-                    <Grid item>
-                      <a>LinkedIn</a>
                     </Grid>
                     <br/>
                     <Grid item>
